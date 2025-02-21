@@ -70,3 +70,64 @@ const addResult = () => {
     text[0].innerHTML = `Nome: ${bicicleta.nome}`
     text[1].innerHTML = `peso: ${bicicleta.peso}`
 }
+
+/* Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */
+
+
+const squadra = [
+    {
+        nome: "inter",
+        puntiFatti: "",
+        falliSubiti: ""
+    },
+    {
+        nome: "milan",
+        puntiFatti: "",
+        falliSubiti: ""
+    },
+    {
+        nome: "juve",
+        puntiFatti: "",
+        falliSubiti: ""
+    },
+    {
+        nome: "Roma",
+        puntiFatti: "",
+        falliSubiti: ""
+    },
+    {
+        nome: "Como",
+        puntiFatti: "",
+        falliSubiti: ""
+    }
+]
+const falli = []
+let number
+console.log(squadra);
+
+for (let i = 0; i < squadra.length; i++) {
+    randomNumber()
+    squadra[i].falliSubiti = (number)
+    falli.push({ nome: squadra[i].nome, falliSubiti: squadra[i].falliSubiti })
+    randomNumber()
+    squadra[i].puntiFatti = (number)
+}
+
+
+console.log(falli);
+
+
+
+
+
+
+
+//Cratore di numeri casuali da 1 a 10
+function randomNumber() {
+    number = Math.floor((Math.random() * 20) + 1);
+    return number
+}
