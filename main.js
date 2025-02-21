@@ -24,3 +24,16 @@ const negozio = [
     }
 
 ]
+let piuPesante = 100
+let bicicleta = {}
+for (i = 0; i < negozio.length; i++) {
+    if (negozio[i].peso < piuPesante) {
+        piuPesante = negozio[i].peso
+        bicicleta = negozio[i]
+    }
+
+}
+console.log(piuPesante);
+console.log(bicicleta);
+
+
